@@ -316,3 +316,18 @@ body {
         margin-bottom: 0px;
     }
 }
+
+/* Testimonial */
+.testimonial {
+    padding: 50px 0;
+}
+
+.testimonial img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.testimonial h5 {
+    font-weight: 600;
+}
