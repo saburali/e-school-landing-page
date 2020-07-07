@@ -1,0 +1,54 @@
+/* Common Style */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.btn:active,
+.btn:focus {
+    outline: 0;
+    outline-color: transparent;
+    box-shadow: none;
+}
+
+/* Navabr */
+.navbar {
+    background-color: #f0fff0;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.navbar .nav-item {
+    margin: 0 10px;
+}
+
+.navbar .nav-item .nav-link {
+    font-size: 17px;
+}
+
+.navbar .nav-item.active .nav-link {
+    color: #21b573;
+}
+
+.navbar .nav-item .nav-link:hover {
+    color: #21b573;
+}
+
+.navbar .nav-link.btn {
+    color: #fff !important;
+    background-color: #21b573;
+    border-radius: 25px;
+    padding: 6px 20px;
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar .navbar-nav {
+        text-align: center;
+    }
+    
+    .navbar .nav-item {
+        margin: 10px 0;
+    }
+}
