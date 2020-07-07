@@ -1,14 +1,38 @@
+/* Include Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
 /* Common Style */
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-.btn:active,
-.btn:focus {
+.button {
+    font-size: 16px;
+    color: #fff !important;
+    background-color: #21b573;
+    border-radius: 25px;
+    display: inline-block;
+    padding: 6px 20px !important;
+}
+
+.button:hover {
+    text-decoration: none;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+}
+
+.button:active,
+.button:focus {
     outline: 0;
     outline-color: transparent;
     box-shadow: none;
+}
+
+@media only screen and (max-width: 991px) {
+    .button {
+        font-size: 14px;
+    }
 }
 
 /* Navabr */
@@ -36,19 +60,91 @@ body {
     color: #21b573;
 }
 
-.navbar .nav-link.btn {
-    color: #fff !important;
-    background-color: #21b573;
-    border-radius: 25px;
-    padding: 6px 20px;
-}
-
 @media only screen and (max-width: 767px) {
     .navbar .navbar-nav {
         text-align: center;
     }
-    
+
     .navbar .nav-item {
         margin: 10px 0;
+    }
+}
+
+
+/* Banner */
+.banner {
+    height: 100vh;
+    background-color: #f0fff0;
+    display: flex;
+    align-items: center;
+}
+
+.banner p {
+    color: #FD511A;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.banner h2 {
+    font-size: 48px;
+    line-height: 70px;
+}
+
+.banner h2 span:first-child {
+    color: #000;
+}
+
+.banner h2 span:first-child {
+    color: #21b573;
+}
+
+.banner .description {
+    color: #6C6B6B;
+    display: block;
+    font-size: 16px;
+    line-height: 36px;
+}
+
+.banner .button {
+    margin-top: 15px;
+}
+
+@media only screen and (max-width: 991px) {
+    .banner h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .banner .description {
+        font-size: 13px;
+        line-height: 25px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .banner {
+        margin-top: 50px;
+    }
+    
+    .banner h2 br {
+        display: none;
+    }
+    
+    .banner .col-md-6:first-child {
+        margin-bottom: 50px;
+    }
+    
+    .banner .btn-div {
+        text-align: right;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .banner h2 br {
+        display: block;
+    }
+    
+    .banner p {
+        margin-bottom: 5px;
     }
 }
