@@ -125,15 +125,15 @@ body {
     .banner {
         margin-top: 50px;
     }
-    
+
     .banner h2 br {
         display: none;
     }
-    
+
     .banner .col-md-6:first-child {
         margin-bottom: 50px;
     }
-    
+
     .banner .btn-div {
         text-align: right;
     }
@@ -143,8 +143,70 @@ body {
     .banner h2 br {
         display: block;
     }
-    
+
     .banner p {
         margin-bottom: 5px;
+    }
+}
+
+/* Counter */
+
+.counter {
+    padding: 50px 0;
+}
+
+.counter .card {
+    height: 190px;
+    border: 0;
+    padding: 25px;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    transition: 0.5s;
+    background-color: #F8FFFB;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+}
+
+.counter .card:hover {
+    background-color: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+}
+
+.counter .card img {
+    height: 80px;
+    width: 60px;
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -17%);
+}
+
+.counter .card p {
+    margin: 5px;
+    font-size: 12px;
+}
+
+.counter .card .number-count {
+    padding-top: 90px;
+    font-weight: 600;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 767px) {
+    .counter .card {
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .counter .card img {
+        height: 60px;
+        width: 53px;
+    }
+
+    .counter .card .number-count {
+        padding-top: 68px;
+        font-size: 13px;
     }
 }
