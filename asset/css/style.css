@@ -44,6 +44,13 @@ body {
     margin-bottom: 25px;
 }
 
+@media only screen and (max-width: 575px) {
+    .title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
 /* Navabr */
 .navbar {
     background-color: #f0fff0;
@@ -302,16 +309,15 @@ body {
     .online-courses .card-body .button {
         font-size: 9px;
     }
-    
-    .online-courses .card-body .flex {
-    }
+
+    .online-courses .card-body .flex {}
 }
 
 @media only screen and (max-width: 767px) {
     .online-courses .col-md-4 {
         margin-bottom: 25px;
     }
-    
+
     .online-courses .col-md-4:last-child {
         margin-bottom: 0px;
     }
@@ -330,4 +336,14 @@ body {
 
 .testimonial h5 {
     font-weight: 600;
+}
+
+@media only screen and (max-width: 575px) {
+    .testimonial h5 {
+        font-size: 16px;
+    }
+
+    .testimonial p {
+        font-size: 12px;
+    }
 }
