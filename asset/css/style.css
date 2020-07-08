@@ -516,6 +516,18 @@ body {
     font-size: 14px;
     font-weight: 400;
     list-style: circle;
+    transition: 0.4s;
+}
+
+.footer li a {
+    color: #fff;
+    opacity: 0.8;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+.footer li a:hover {
+    opacity: 1;
 }
 
 .footer p.footer-content-title {
