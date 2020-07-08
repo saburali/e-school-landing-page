@@ -35,6 +35,22 @@ body {
     }
 }
 
+.title {
+    color: #413960;
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 575px) {
+    .title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
 /* Navabr */
 .navbar {
     background-color: #f0fff0;
@@ -125,15 +141,15 @@ body {
     .banner {
         margin-top: 50px;
     }
-    
+
     .banner h2 br {
         display: none;
     }
-    
+
     .banner .col-md-6:first-child {
         margin-bottom: 50px;
     }
-    
+
     .banner .btn-div {
         text-align: right;
     }
@@ -143,8 +159,401 @@ body {
     .banner h2 br {
         display: block;
     }
-    
+
     .banner p {
         margin-bottom: 5px;
+    }
+}
+
+/* Management */
+.management {
+    padding: 80px 0;
+    background-color: #f0fff0;
+}
+
+.management h2 {
+    font-size: 32px;
+    line-height: 45px;
+    color: #21b573;
+    margin-bottom: 25px;
+}
+
+.management p {
+    font-size: 16px;
+    line-height: 1.7em;
+    color: #6C6B6B;
+    margin-bottom: 25px;
+}
+
+.management .featured-item {
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    padding-left: 52px;
+    min-height: 152px;
+}
+
+.management .featured-item .icon {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    background-repeat: no-repeat;
+}
+
+.management .featured-item .icon-1 {
+    background-image: url(../image-icon/icon-1.png);
+}
+
+.management .featured-item .icon-2 {
+    background-image: url(../image-icon/icon-2.png);
+}
+
+.management .featured-item .icon-3 {
+    background-image: url(../image-icon/icon-3.png);
+}
+
+.management .featured-item .icon-4 {
+    background-image: url(../image-icon/icon-4.png);
+}
+
+.management .featured-item h4 {
+    margin: 0;
+}
+
+.management .featured-item .title-box {
+    font-size: 14px;
+    font-weight: 700;
+    color: #666;
+    line-height: 1.4em;
+    text-transform: uppercase;
+}
+
+.management .featured-item p {
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 1.7em;
+}
+
+@media only screen and (max-width: 575px) {
+    .management {
+        padding: 40px 0;
+    }
+
+    .management .col-md-5 {
+        margin-bottom: 35px;
+    }
+
+    .management .featured-item {
+        padding-bottom: 0;
+        min-height: 152px;
+    }
+}
+
+/* Enhance */
+.enhance {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(../image-icon/enhance.jpg);
+}
+
+.enhance .enhance-content {
+    text-align: center;
+    background-color: rgba(33, 181, 115, 0.7);
+}
+
+.enhance .container {
+    padding: 80px 0;
+}
+
+.enhance p {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.enhance h1 {
+    color: #fff;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.enhance .button-2 {
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    color: #fff;
+    height: 50px;
+    line-height: 47px;
+    padding: 0 60px;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 15px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.enhance .button-2:hover {
+    border-color: #21b573;
+    background-color: #21b573;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+}
+
+@media only screen and (max-width: 575px) {
+    .enhance h1 {
+        font-size: 28px;
+        line-height: 40px;
+        margin-bottom: 25px;
+    }
+}
+
+/* Counter */
+.counter {
+    padding: 50px 0;
+}
+
+.counter .card {
+    height: 190px;
+    border: 0;
+    padding: 25px;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    transition: 0.5s;
+    background-color: #F8FFFB;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+}
+
+.counter .card:hover {
+    background-color: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+}
+
+.counter .card img {
+    height: 80px;
+    width: 60px;
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -17%);
+}
+
+.counter .card p {
+    margin: 5px;
+    font-size: 12px;
+}
+
+.counter .card .number-count {
+    color: #413960;
+    padding-top: 90px;
+    font-weight: 600;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 767px) {
+    .counter .card {
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .counter .card img {
+        height: 60px;
+        width: 53px;
+    }
+
+    .counter .card .number-count {
+        padding-top: 68px;
+        font-size: 13px;
+    }
+}
+
+/* Online Courses */
+.online-courses {
+    padding: 50px 0;
+}
+
+.online-courses .card {
+    border: 0;
+    padding: 20px 20px 0 20px;
+    border-radius: 12px;
+    transition: 0.7s;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.online-courses .card:hover {
+    box-shadow: none;
+    background-color: #F8FFFB;
+}
+
+.online-courses .card .card-body {
+    padding: 15px 0 20px 0;
+}
+
+.online-courses .card .card-title {
+    color: #413960;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 0;
+}
+
+.online-courses .card .card-text {
+    color: #413960;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+
+.online-courses .card-body img {
+    height: 18px;
+    width: 20px;
+}
+
+.online-courses .card-body span {
+    color: #585859;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 2px;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+    .online-courses .card-body span {
+        font-size: 13px;
+        line-height: 24px;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .online-courses .card .card-title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .online-courses .card .card-text {
+        font-size: 13px;
+        line-height: 20px;
+        margin-bottom: 5px;
+    }
+
+    .online-courses .card-body img {
+        height: 10px;
+        width: 12px;
+    }
+
+    .online-courses .card-body span {
+        font-size: 10px;
+        line-height: 24px;
+    }
+
+    .online-courses .card-body .button {
+        font-size: 9px;
+    }
+
+    .online-courses .card-body .flex {}
+}
+
+@media only screen and (max-width: 767px) {
+    .online-courses .col-md-4 {
+        margin-bottom: 25px;
+    }
+
+    .online-courses .col-md-4:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+/* Testimonial */
+.testimonial {
+    padding: 50px 0;
+}
+
+.testimonial img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.testimonial h5 {
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 575px) {
+    .testimonial h5 {
+        font-size: 16px;
+    }
+
+    .testimonial p {
+        font-size: 12px;
+    }
+}
+
+/* Footer */
+.footer {
+    color: #fff;
+    background-color: #282531;
+}
+
+.footer .container {
+    padding: 50px 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer p,
+.footer li {
+    font-size: 14px;
+    font-weight: 400;
+    list-style: circle;
+}
+
+.footer p.footer-content-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer .copyright {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.footer .copyright a {
+    font-weight: 600;
+    color: gray;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.footer .copyright a:hover {
+    color: #fff;
+}
+
+@media only screen and (max-width: 575px) {
+    .footer {
+        text-align: center;
+    }
+
+    .footer .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    .footer .col-md-8 {
+        text-align: left;
+        margin-left: 100px;
+    }
+
+    .footer .copyright {
+        margin-top: 25px;
     }
 }
