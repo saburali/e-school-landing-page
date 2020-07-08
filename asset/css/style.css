@@ -165,6 +165,93 @@ body {
     }
 }
 
+/* Management */
+.management {
+    padding: 80px 0;
+    background-color: #f0fff0;
+}
+
+.management h2 {
+    font-size: 32px;
+    line-height: 45px;
+    color: #21b573;
+    margin-bottom: 25px;
+}
+
+.management p {
+    font-size: 16px;
+    line-height: 1.7em;
+    color: #6C6B6B;
+    margin-bottom: 25px;
+}
+
+.management .featured-item {
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    padding-left: 52px;
+    min-height: 152px;
+}
+
+.management .featured-item .icon {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    background-repeat: no-repeat;
+}
+
+.management .featured-item .icon-1 {
+    background-image: url(../image-icon/icon-1.png);
+}
+
+.management .featured-item .icon-2 {
+    background-image: url(../image-icon/icon-2.png);
+}
+
+.management .featured-item .icon-3 {
+    background-image: url(../image-icon/icon-3.png);
+}
+
+.management .featured-item .icon-4 {
+    background-image: url(../image-icon/icon-4.png);
+}
+
+.management .featured-item h4 {
+    margin: 0;
+}
+
+.management .featured-item .title-box {
+    font-size: 14px;
+    font-weight: 700;
+    color: #666;
+    line-height: 1.4em;
+    text-transform: uppercase;
+}
+
+.management .featured-item p {
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 1.7em;
+}
+
+@media only screen and (max-width: 575px) {
+    .management {
+        padding: 40px 0;
+    }
+    
+    .management .col-md-5 {
+        margin-bottom: 35px;
+    }
+
+    .management .featured-item {
+        padding-bottom: 0;
+        min-height: 152px;
+    }
+}
+
 /* Counter */
 .counter {
     padding: 50px 0;
@@ -345,5 +432,66 @@ body {
 
     .testimonial p {
         font-size: 12px;
+    }
+}
+
+/* Footer */
+.footer {
+    color: #fff;
+    background-color: #282531;
+}
+
+.footer .container {
+    padding: 50px 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer p,
+.footer li {
+    font-size: 14px;
+    font-weight: 400;
+    list-style: circle;
+}
+
+.footer p.footer-content-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer .copyright {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.footer .copyright a {
+    font-weight: 600;
+    color: gray;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.footer .copyright a:hover {
+    color: #fff;
+}
+
+@media only screen and (max-width: 575px) {
+    .footer {
+        text-align: center;
+    }
+
+    .footer .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    .footer .col-md-8 {
+        text-align: left;
+        margin-left: 100px;
+    }
+
+    .footer .copyright {
+        margin-top: 25px;
     }
 }
